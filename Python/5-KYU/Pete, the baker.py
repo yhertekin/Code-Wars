@@ -18,3 +18,8 @@ def cakes(recipe, available):
             counter.append(available[key] // value)
         else: return 0
     return min(counter)
+
+
+# another way but not my solution
+def cakes(recipe, available):
+  return min(available.get(k, 0)/recipe[k] for k in recipe)
