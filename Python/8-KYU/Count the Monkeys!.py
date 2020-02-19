@@ -11,8 +11,3 @@ monkeyCount(1) # --> [1]
 
 def monkey_count(n):
     return [i for i in range(1, n+1)]
-
-#or
-
-def count(n)
-    return range(1,n+1)
