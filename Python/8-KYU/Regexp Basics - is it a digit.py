@@ -5,7 +5,7 @@ Implement String#digit? (in Java StringUtils.isDigit(String)), which should retu
 import re
 
 def is_digit(n):
-    return bool(re.match("\d\Z", n))
+    return bool(re.match(r"\d\Z", n))
     
 #     or
     
