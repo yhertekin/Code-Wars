@@ -3,6 +3,8 @@ Given a non-empty array of integers, return the result of multiplying the values
 
 [1, 2, 3, 4] => 1 * 2 * 3 * 4 = 24
 """
-from numpy import prod
 def grow(arr):
-    return prod(arr)
+    p = 1
+    for item in arr:
+        p*=item
+    return p
