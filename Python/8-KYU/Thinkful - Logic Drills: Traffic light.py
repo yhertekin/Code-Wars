@@ -5,3 +5,6 @@ Complete the function that takes a string as an argument representing the curren
 
 For example, update_light('green') should return 'yellow'.
 """
+def update_light(current):
+    lights = {'green': 'yellow', 'yellow': 'red', 'red': 'green'}
+    return lights[current]
