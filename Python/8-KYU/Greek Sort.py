@@ -20,4 +20,10 @@ greek_comparator('psi', 'psi')      == 0
 greek_comparator('upsilon', 'rho')  >  0
 """
 def greek_comparator(lhs, rhs):
-    return cmp(greek_alphabet.index(lhs), greek_alphabet.index(rhs))
+    # the tuple greek_alphabet is defined in the global namespace
+    if greek_alphabet.index(lhs) == greek_alphabet.index(rhs):
+        return 0
+    if greek_alphabet.index(lhs) < greek_alphabet.index(rhs):
+        return -1
+    return 1
+        
